@@ -10,6 +10,8 @@ public class Main {
         Task6();
         Task7();
         Task8();
+        Task4Ext();
+        Task5Ext();
     }
     public static void Task1()
     {
@@ -137,6 +139,39 @@ public class Main {
             if (cometNearByEarth > twoHundredYearsAgo && cometNearByEarth < oneHundredYearsNext) {
                 System.out.println(cometNearByEarth);
             }
+        }
+    }
+
+    public static void Task4Ext() {
+        System.out.println("Задача 4 Повышенная сложность");
+
+        for (int i = 1; i <= 30; i++) {
+            System.out.print(i + ": ");
+            if (i % 3 == 0 && i % 5 == 0) {
+                System.out.print("ping pong");
+            } else if (i % 3 == 0) {
+                System.out.print("ping");
+            } else if (i % 5 == 0) {
+                System.out.print("pong");
+            }
+            System.out.println();
+        }
+        System.out.println();
+    }
+    public static void Task5Ext()
+    {
+        System.out.println("Задача 5 Повышенная сложность");
+        int febNumOne = 0;
+        int febNumTwo = 1;
+        //int result;
+
+        for(int i = 0; i < 5; i++)
+        {
+            System.out.print(febNumOne + " ");
+            System.out.print(febNumTwo + " ");
+            febNumOne += febNumTwo;
+            febNumTwo += febNumOne;
+
         }
     }
 }
